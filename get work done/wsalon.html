@@ -68,8 +68,8 @@
     <!-- Section Separate -->
     <section style="background: #F1F4F6;height: 20px;"></section>
 
-      <!-- Reviews Section -->
-      <section id="reviews">
+      <!-- option Section -->
+      <section id="wsalon">
         <div class="container p-5">
             <div class="row justify-content-center">
                 <h3 class="text-center font-weight-bolder">List of Available ladies Salon in you area </h3>
@@ -88,7 +88,22 @@
                             </div>
                         </div>
                         <div class="mobile">
-                            <button>Book</button>
+                            <button class="bookbutton">Book</button>
+                        </div>
+                        <div class="bookingform">
+
+                            <div class="inputbox">
+                                <label for="category" class="label">Service </label>
+                                <select name="category" id="category" class="input-field" required>
+                                    <option value="advocate">Haircut & Beard Styling</option>
+                                    <option value="carpenter">DeTan</option>
+                                    <option value="electrician">Fecial & Cleanup</option>
+                                    <option value="plumber">Hair Color</option>
+                                    <option value="painter">Massage</option>
+                                </select>
+                                <i class="bx bx-lock-alt icon "></i>
+                              </div>
+
                         </div>
                         
                         
@@ -221,6 +236,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" type="text/javascript"></script>
+    <script src="main.js"> </script>
 
 </body>
 
