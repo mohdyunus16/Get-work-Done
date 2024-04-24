@@ -730,6 +730,8 @@ margin: 5px;
     flex-direction: column;
     width: 50%;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -751,7 +753,7 @@ margin: 5px;
 }
 
 .input-field {
-    width: 80%;
+    width: 100%;
     height: 50px;
     font-size: 16px;
     background-color: transparent;
@@ -816,6 +818,48 @@ margin: 5px;
     opacity: 1;
     pointer-events: auto;
     transition: all 500ms ease;
-    padding: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* reshabhs code */
+
+
+
+
+
+.city-dropdown {
     margin-bottom: 20px;
+}
+
+.salon {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+
+.salon p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.salon button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.salon button:hover {
+    background-color: #0056b3;
 }

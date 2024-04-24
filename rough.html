@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Salon List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .city-dropdown {
+            margin-bottom: 20px;
+        }
+
+        .salon {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .salon h2 {
+            margin-top: 0;
+        }
+
+        .salon p {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .salon button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .salon button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <h1>Women's Salon List</h1>
+
+            <!-- City selection dropdown -->
+            <asp:DropDownList ID="cityDropdown" CssClass="city-dropdown" runat="server" AutoPostBack="true" OnSelectedIndexChanged="cityDropdown_SelectedIndexChanged">
+                <asp:ListItem Text="-- Select City --" Value="" Selected="True"></asp:ListItem>
+                
+            </asp:DropDownList>
+
+            <!-- Salon list container -->
+<div id="salonListContainer" runat="server">
+    <!-- Salon list will be populated dynamically -->
+</div>
+
+        </div>
+    </form>
+</body>
+</html>
